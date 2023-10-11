@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0 !important;
+  box-sizing: border-box !important;
+}
+
+body {
+  background: #111416;
+  color: #f0f0f0;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: "Open Sans", "Gill Sans", "Noto Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+#app {
+  padding: 50px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 730px;
+  margin: 0 auto;
+}
+
+#header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+
+main {
+  flex: 1;
+}
+
+#intro {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.vid-link {
+  display: block;
+  margin-top: 20px;
+}
+
+.red {
+  color: #e55;
+}
+
+.turquoise {
+  color: #3aa;
+}
+
+#cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  width: 230px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card__bg {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: calc(100% - 70px);
+  background: no-repeat center bottom;
+  opacity: 0.2;
+  filter: grayscale(0.5);
+}
+
+.card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card header img {
+  width: 16px;
+  right: 1px;
+  position: relative;
+  filter: grayscale(1);
+}
+
+.card__description {
+  flex: 1;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.card__v {
+  height: 18px;
+}
+
+.card footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card footer a {
+  line-height: 1;
+}
+
+.card footer img {
+  border-radius: 3px;
+  height: 20px;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  #cards {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .card {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    min-height: 0;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  #cards {
+    text-align: center;
+  }
+}
